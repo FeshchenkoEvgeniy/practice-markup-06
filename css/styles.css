@@ -794,7 +794,7 @@ form {
   border-color: var(--blueColor);
   background-color: var(--blueColor);
 }
-.modal-form-bottomt {
+.modal-form-bottom {
   display: flex;
   justify-content: center;
   align-items: center;
