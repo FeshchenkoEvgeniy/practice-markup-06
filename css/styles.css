@@ -770,6 +770,35 @@ form {
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
+.modal-form-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon-check {
+  border: 1.8px solid var(--mainColor);
+  border-radius: 2px;
+  fill: var(--white);
+  margin-right: 7px;
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.checkbox:focus + .icon-check {
+  outline: 1px solid var(--blueColor);
+}
+.checkbox:checked + .icon-check {
+  border-color: var(--blueColor);
+  background-color: var(--blueColor);
+}
+.form-text-bottom {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03;
+}
+.form-link {
+  text-decoration: underline;
+  color: var(--blueColor);
+}
 .form-button {
   font-size: 16px;
   font-weight: 700;
@@ -790,21 +819,4 @@ form {
 .form-button:hover,
 .form-button:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
-
-.checkbox:focus + .icon-check {
-  outline: 1px solid var(--blueColor);
-}
-.checkbox:checked + .icon-check {
-  border-color: var(--blueColor);
-  background-color: var(--blueColor);
-}
-.form-text-bottom {
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03;
-}
-.form-link {
-  text-decoration: underline;
-  color: var(--blueColor);
 }
